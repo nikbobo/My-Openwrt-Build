@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - '.config'
+      - 'r6260.config'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -38,7 +38,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build:
+  build-r6260:
     runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
