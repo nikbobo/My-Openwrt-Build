@@ -19,7 +19,8 @@ on:
       - main
     paths:
       - 'r6260.config'
-#  schedule:
+  schedule:
+    - cron: 0 14 * * *
 #    - cron: 0 8 * * 5
 #  watch:
 #    types: started
