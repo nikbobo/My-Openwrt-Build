@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build R6260 OpenWrt
 
 on:
   repository_dispatch:
@@ -38,7 +38,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build-r6260:
+  build:
     runs-on: ubuntu-18.04
     if: github.event.repository.owner.id == github.event.sender.id
 
