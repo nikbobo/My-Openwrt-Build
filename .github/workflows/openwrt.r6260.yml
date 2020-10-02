@@ -18,7 +18,7 @@ on:
     branches:
       - main
     paths:
-      - 'openwrt/r6260.config'
+      - 'op-r6260.config'
   schedule:
     - cron: 0 4 * * 5
 #    - cron: 0 8 * * 5
@@ -29,9 +29,9 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: openwrt/r6260.config
-  DIY_P1_SH: openwrt/diy-part1.sh
-  DIY_P2_SH: openwrt/diy-part2.sh
+  CONFIG_FILE: op-r6260.config
+  DIY_P1_SH: op-diy-part1.sh
+  DIY_P2_SH: op-diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
