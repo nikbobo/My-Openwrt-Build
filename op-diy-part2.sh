@@ -12,5 +12,5 @@
 
 # Modify default IP
 # sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-sed -i 's/^\(PKG_VERSION:=\)\(.*\)/\14.27.5/g' feeds/lienol/v2ray/Makefile
-sed -i 's/^\(PKG_HASH:=\)\(.*\)/\1f289d8d85ab0851851a6e3c101226e77bed0052fd60f9185df8852b601e657f8/g' feeds/lienol/v2ray/Makefile
+sed -i 's/^\(PKG_VERSION:=\)\(.*\)/\14.27.5/' feeds/lienol/v2ray/Makefile
+sed -i 's/^\(PKG_HASH:=\)\(.*\)/\1f289d8d85ab0851851a6e3c101226e77bed0052fd60f9185df8852b601e657f8/' feeds/lienol/v2ray/Makefile
