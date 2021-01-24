@@ -12,7 +12,7 @@
 
 # Modify default IP
 # sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
-sed -i 's/^\(PKG_VERSION:=\)\(.*\)/\14.27.5/' feeds/lienol/v2ray/Makefile
-sed -i 's/^\(PKG_HASH:=\)\(.*\)/\1f289d8d85ab0851851a6e3c101226e77bed0052fd60f9185df8852b601e657f8/' feeds/lienol/v2ray/Makefile
+sed -i 's/^\(PKG_VERSION:=\)\(.*\)/\14.27.0/' feeds/lienol/v2ray/Makefile
+sed -i 's/^\(PKG_HASH:=\)\(.*\)/\15e1b0146953398a5422611b20f5e62c3a9c3efd62cd42295762f6f39d8eff31e/' feeds/lienol/v2ray/Makefile
 sed -i 's/$(STAGING_DIR_HOST)\/bin\/upx --lzma --best $(GO_PKG_BUILD_BIN_DIR)\/v2ray-plugin//' feeds/lienol/v2ray-plugin/Makefile
 sed -i 's/ln_start_bin "$(first_type $(config_t_get global_app xray_file notset)\/xray xray)" xray $log_file -config="$http_config_file"/ln_start_bin "$(first_type $(config_t_get global_app v2ray_file notset)\/v2ray v2ray)" v2ray $log_file -config="$http_config_file"/' feeds/lienol/luci-app-passwall/root/usr/share/passwall/app.sh
