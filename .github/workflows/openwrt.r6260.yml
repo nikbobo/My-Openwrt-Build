@@ -71,9 +71,9 @@ jobs:
         mkdir -p openwrt/tools/upx && mkdir -p openwrt/tools/ucl
         [ -e upx/Makefile ] && mv upx/Makefile openwrt/tools/upx/Makefile
         [ -e ucl/Makefile ] && mv ucl/Makefile openwrt/tools/ucl/Makefile
-        mkdir -p openwrt/package/lean/luci-app-vsftpd && mkdir -p openwrt/package/lean/vsftpd-alt
-        [ -e vsftpd-alt/Makefile ] && mv vsftpd-alt/*.* openwrt/package/lean/vsftpd-alt/
-        [ -e luci-app-vsftpd/Makefile ] && mv luci-app-vsftpd/*.* openwrt/package/lean/luci-app-vsftpd/
+        mkdir -p openwrt/package/lean
+        [ -e vsftpd-alt/Makefile ] && mv vsftpd-alt openwrt/package/lean/
+        [ -e luci-app-vsftpd/Makefile ] && mv luci-app-vsftpd openwrt/package/lean/
         chmod +x $DIY_P1_SH
         cd openwrt
         ls -la
