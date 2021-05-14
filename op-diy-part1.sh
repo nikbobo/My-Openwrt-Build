@@ -16,7 +16,7 @@
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git lienol https://github.com/xiaorouji/openwrt-passwall^914fb36c25dae4062fe043064d859dee692dd1ba' feeds.conf.default
-mkdir -p tools/upx
-mkdir -p tools/ucl
+sudo mkdir -p tools/upx
+sudo mkdir -p tools/ucl
 [ -e '../upx/Makefile' ] && mv '../upx/Makefile' tools/upx/Makefile
 [ -e '../ucl/Makefile' ] && mv '../ucl/Makefile' tools/ucl/Makefile
