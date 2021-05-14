@@ -67,7 +67,6 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
     - name: Load custom feeds
       run: |
-        ls -la
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         mkdir -p openwrt/tools/upx && mkdir -p openwrt/tools/ucl
         [ -e upx/Makefile ] && mv upx/Makefile openwrt/tools/upx/Makefile
